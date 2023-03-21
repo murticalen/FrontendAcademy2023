@@ -6,6 +6,7 @@ export enum OperatingSystem {
 
 enum KeyboardType {
     Membrane, // first item in enum is 0 by default if no value is provided
+    Touch,
     Mechanical = 90,
     Butterfly, // this is 91
     Optical = 'opti',
@@ -45,7 +46,20 @@ type HTMLAttributes = {
 }
 
 type HTMLStuff = Pick<HTMLAttributes, 'className' | 'style'> // pick only className and style from HTML Attrs.
+type HTMLStuffSame = Omit<HTMLAttributes, 'id' | 'placeholder'>
 
 type EmptyProps = Omit<InnerProps, 'device'> // omit device from InnerProps, now they are empty
 
-type NewInnerProps = EmptyProps & {isBroken?: boolean} // NewInnerProps is union of empty props and {isBroken}
+type NewInnerProps = InnerProps & {isBroken?: boolean} // NewInnerProps is union of empty props and {isBroken}
+
+const v: Smartphone = {
+    os: OperatingSystem.Windows,
+    color: 'midnight black',
+    name: 'Nokia Lumia',
+    type: 'mobile',
+    networkConnectivity: [],
+}
+const ip: NewInnerProps = {
+    device: v,
+    isBroken: false,
+}

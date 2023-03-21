@@ -16,7 +16,7 @@ async function runAsync() {
 
   // always in try-catch
   try {
-    const text = await randomNumberInStringPromise(1000)
+    const text = await randomNumberInStringPromise()
     console.log(text)
   } catch (error) {
     console.error('Error:', error.message)

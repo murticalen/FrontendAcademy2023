@@ -13,12 +13,17 @@ function randomNumberInStringPromise() {
   })
 }
 
-randomNumberInStringPromise()
+const promise = randomNumberInStringPromise();
+
+  promise
   // then is called when promise is in fulfilled state (resolve is called from promise constructor)
   .then(text => {
     console.log(text)
   })
   // catch is called when promise is in rejected state (reject is called from promise constructor)
   .catch(error => console.error('Error:', error.message))
+  .finally(() => {
+    console.log("We have resolved the promise")
+  })
 
 console.log('End')
