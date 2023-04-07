@@ -14,6 +14,9 @@ function ComponentSelectContainer({children}: {children: React.ReactNode}) {
         alignItems: "center",
         justifyContent: "center",
         gap: "20px",
+        padding: '10px',
+        borderBottom: '1px solid black',
+        marginBottom: '10px'
       }}
     >
       {children}
@@ -37,18 +40,18 @@ function App() {
     <div className="App">
       <ComponentSelectContainer>
         <ComponentSelectButton
-          onClick={() => setComponent(FETCH_COMPONENT)}
-        >
-          {FETCH_COMPONENT}
-        </ComponentSelectButton>
-        <ComponentSelectButton
           onClick={() => setComponent(INPUT_COMPONENT)}
         >
           {INPUT_COMPONENT}
         </ComponentSelectButton>
+        <ComponentSelectButton
+          onClick={() => setComponent(FETCH_COMPONENT)}
+        >
+          {FETCH_COMPONENT}
+        </ComponentSelectButton>
       </ComponentSelectContainer>
-      {component === FETCH_COMPONENT && <Fetch />}
       {component === INPUT_COMPONENT && <Input />}
+      {component === FETCH_COMPONENT && <Fetch />}
     </div>
   );
 }
