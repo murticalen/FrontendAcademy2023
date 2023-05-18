@@ -126,7 +126,7 @@ User stories are bellow: Stories in the **bold** are required, stories in the _i
 
 ### _Matches_
 
-1. _For selected tournament/team/player, a user can see their matches. The pagination and general feel are similar/identical for all entities. - 30 points
+1. _For selected tournament/team/player, a user can see their matches. The pagination and general feel are similar/identical for all entities._ - 30 points
 
 #### _Team page_
 
@@ -161,7 +161,8 @@ User stories are bellow: Stories in the **bold** are required, stories in the _i
 4. _User can change date format in the app, or date format is changed via language change_ - 5 points
 
 #### _Search - no design_
-1. _User can search teams and players in the app_ - 10 points
+1. _User can search teams in the app_ - 5 points
+1. _User can search players in the app_ - 5 points
 
 ## API
 
