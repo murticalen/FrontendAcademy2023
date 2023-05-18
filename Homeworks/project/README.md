@@ -43,7 +43,7 @@ If you want to personalize your project, the easiest way would be to create your
 
 **You will present your project sometime mid-June, the date will be arranged later.**
 
-There will be one mandatory checkpoint between May 25th and 29th or between June 6th and 9th. We will arrange a Slack call and discuss your project status. You can also visit Sofascore office for the checkpoint if I am present there.
+There will be one mandatory checkpoint between May 25th and 29th or on June 6th or 7th. We will arrange a Slack call and discuss your project status. You can also visit Sofascore office for the checkpoint if I am present there.
 
 Feel free to contact me on Slack when you've added something new, have a question, and we can discuss it on a call or live.
 
@@ -118,7 +118,7 @@ User stories are bellow: Stories in the **bold** are required, stories in the _i
 
 #### Event Page / event widget
 
-1. **User can see teams playing in the event, score (if exists), date and time** - 5 points
+1. **User can see teams playing in the event, score (if exists), start date and time** - 5 points
 2. **Event widget links to the event page** - 2 points
 3. _Event incidents are displayed_ - 10 points
 4. _User can add/remove the event to Tracked events_ - 3 points
@@ -188,3 +188,8 @@ Suggested free deployment providers are:
 ## Deadline
 
 The deadline is TBD for now.
+
+I suggest you to finish the mandatory tasks as soon as possible, since there are few of them, to make sure you pass the academy. And after you have finished them, add everything else later as a cherry on top.
+
+Estimation:
+- Mandatory tasks: < 1 day
