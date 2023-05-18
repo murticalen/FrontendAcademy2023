@@ -40,7 +40,7 @@ If you want to personalize your project, the easiest way would be to create your
 
 **You will present your project sometime mid-June, the date will be arranged later.**
 
-There will be one mandatory checkpoint on May 31st, June 1st or between June 6th and 8th. We will arrange a Slack call and discuss your project status. You can also visit SofaScore office for the checkpoint if I am present.
+There will be one mandatory checkpoint between May 25th and 29th or between June 6th and 9th. We will arrange a Slack call and discuss your project status. You can also visit SofaScore office for the checkpoint if I am present there.
 
 Feel free to contact me on Slack when you've added something new, have a question, and we can discuss it on a call or live.
 
