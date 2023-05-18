@@ -1,4 +1,4 @@
-# SofaScore Frontend Academy 2023 - Project
+# Sofascore Frontend Academy 2023 - Project
 
 Sofascore Academy final project includes all knowledge and skills that you gathered during all lectures and homeworks. Additionally, through implementation of Sofascore models and functionalities it brings the Sofascore domain closer to you.
 The goal of the final project is to implement a mini Sofascore application, which has all the main elements from Sofascore, but with much fewer details and data.
@@ -40,7 +40,7 @@ If you want to personalize your project, the easiest way would be to create your
 
 **You will present your project sometime mid-June, the date will be arranged later.**
 
-There will be one mandatory checkpoint between May 25th and 29th or between June 6th and 9th. We will arrange a Slack call and discuss your project status. You can also visit SofaScore office for the checkpoint if I am present there.
+There will be one mandatory checkpoint between May 25th and 29th or between June 6th and 9th. We will arrange a Slack call and discuss your project status. You can also visit Sofascore office for the checkpoint if I am present there.
 
 Feel free to contact me on Slack when you've added something new, have a question, and we can discuss it on a call or live.
 
@@ -48,7 +48,7 @@ Use checkpoints to get feedback, ask about difficulties with the domain, API, de
 
 ## Domain
 
-The domain model will mimic the one used at SofaScore. It is simplified for your convenience. 
+The domain model will mimic the one used at Sofascore. It is simplified for your convenience. 
 In this chapter, I will first describe the basic entities used and their connection.
 
 Basic entities are:
