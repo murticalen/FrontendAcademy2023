@@ -28,6 +28,8 @@ There are constraints regarding UI libraries and frameworks. This project is a g
 
 The design for the project is to be found [here](https://app.zeplin.io/project/63c6b31bb78c96b789fb9d5e/dashboard). The design is a suggestion, not a requirement. You can experiment with your own design. However, the Zeplin link also contains all the features required for the 100% completion of this project, so make sure to check it out.
 
+The document how to use Zeplin can be found [here](https://docs.google.com/document/d/1f2rsmmpXW4vkGkWni4IW13RE3ZtwmCcSJpcsClpbOFo).
+
 If you want to personalize your project, the easiest way would be to create your color scheme (i.e. theme) and use all the components from the design.
 
 ## Checkpoints
