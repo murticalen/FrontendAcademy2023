@@ -41,8 +41,6 @@ If you want to personalize your project, the easiest way would be to create your
 
 ## Checkpoints
 
-**You will present your project sometime mid-June, the date will be arranged later.**
-
 There will be one mandatory checkpoint between May 25th and 29th or on June 6th or 7th. We will arrange a Slack call and discuss your project status. You can also visit Sofascore office for the checkpoint if I am present there.
 
 Feel free to contact me on Slack when you've added something new, have a question, and we can discuss it on a call or live.
@@ -187,7 +185,7 @@ Suggested free deployment providers are:
 
 ## Deadline
 
-The deadline is TBD for now.
+The deadline for the project is June 9th, 9AM.
 
 I suggest you to finish the mandatory tasks as soon as possible, since there are few of them, to make sure you pass the academy. And after you have finished them, add everything else later as a cherry on top.
 
