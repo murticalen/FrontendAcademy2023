@@ -55,11 +55,6 @@ export default function PlayerLayout({ player }: { player: Player }) {
   //   return 1
   // }, [mockObject])
 
-  // console.log(typeof window === 'undefined')
-  // const isServer = useIsServer()
-
-  // console.log(isServer)
-
   useEffect(() => {
     console.log(ref.current)
     setDivWidth(ref.current?.getBoundingClientRect()?.width)
