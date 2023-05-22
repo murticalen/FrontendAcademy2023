@@ -1,4 +1,5 @@
 Example: `Memoization.tsx`
+
 Demonstrate how using `useCallback` hook in combination with `React.memo` can lead to performance optimization. First create a `Button` component which takes two arguments: `onClick` function, which obviously occurs on user click and **optional** `name` prop. When the Button gets the `name` prop, it logs to console that it, by the `name`, has re-rendered.
 
 Add four Buttons for user to click, all combinations of two options:

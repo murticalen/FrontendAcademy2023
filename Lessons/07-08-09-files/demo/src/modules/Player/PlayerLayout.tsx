@@ -26,14 +26,6 @@ export default function PlayerLayout({ player }: { player: Player }) {
   );
   // const router = useRouter();
 
-  // const [randomNumber, setRandomNumber] = useState(0)
-
-  // useEffect(() => {
-  //   const intervalV = setInterval(() => setRandomNumber(Math.random()), 1000)
-
-  //   return () => clearInterval(intervalV)
-  // }, [])
-
   // const mockObject = {}
   // console.log('aAAA')
 

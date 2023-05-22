@@ -5,11 +5,13 @@ import UseMemoWithSWR from "./components/UseMemoWithSWR";
 import { ThemeSetterContext } from "@/utils/context";
 import { ThemeName, themes } from "@/utils/theme";
 import Memoization from "./components/Memoization";
+import Refs from "./components/Refs";
 
 enum Component {
   None = "none",
   MemoWithSWR = "memoSWR",
   Memoization = "memoization",
+  Refs = "refs",
 }
 
 const Container = styled.div`
@@ -60,6 +62,9 @@ export default function Playground({ event }: { event: Event }) {
           <option value={Component.Memoization}>
             Memoization with useCallback and React.Memo
           </option>
+          <option value={Component.Refs}>
+            Refs example with a div
+          </option>
         </select>
       </form>
       <form>
@@ -86,6 +91,13 @@ export default function Playground({ event }: { event: Event }) {
         name={Component.Memoization}
       >
         <Memoization />
+      </ComponentDisplay>
+
+      <ComponentDisplay
+        selected={selectedComponent}
+        name={Component.Refs}
+      >
+        <Refs />
       </ComponentDisplay>
     </Container>
   );
