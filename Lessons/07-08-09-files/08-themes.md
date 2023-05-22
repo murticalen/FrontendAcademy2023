@@ -1,0 +1,3 @@
+Add a theme selector components which allows user to select the app's theme. The theme should be in a state in `_app.tsx` default Next.js file so it is propagated to the whole app. There should also be a context provider for setter function.
+
+Add a theme dropdown in `Playground` component and let the user set it. Theme is not visible all around the app since we use default Next.js CSS files, but in components which use it, e.g. our `Button` shown in `Memoization` example.
