@@ -1,12 +1,13 @@
 import { Event } from "@/model/Event";
 import { PropsWithChildren, useContext, useState } from "react";
-import styled, { ThemeContext } from "styled-components";
+import { ThemeContext } from "styled-components";
 import UseMemoWithSWR from "./components/UseMemoWithSWR";
 import { ThemeSetterContext } from "@/utils/context";
 import { ThemeName, themes } from "@/utils/theme";
 import Memoization from "./components/Memoization";
 import Refs from "./components/Refs";
 import Portal from "./components/Portal";
+import * as S from "./styles";
 
 enum Component {
   None = "none",
@@ -16,31 +17,44 @@ enum Component {
   Portal = "portal",
 }
 
-const Container = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 30px;
-
-  & > * {
-    margin: 30px;
-  }
-`;
-
-const ComponentsContainer = styled.div`
-  margin: 30px auto;
-`;
-
 function ComponentDisplay({
   name,
   selected,
   children,
 }: PropsWithChildren<{ selected: Component; name: Component }>) {
   if (selected === name) {
-    return <ComponentsContainer>{children}</ComponentsContainer>;
+    return <S.ComponentWrapper>{children}</S.ComponentWrapper>;
   }
 
   return null;
+}
+
+function Components({
+  selected,
+  event,
+}: {
+  selected: Component;
+  event: Event;
+}) {
+  return (
+    <>
+      <ComponentDisplay selected={selected} name={Component.MemoWithSWR}>
+        <UseMemoWithSWR event={event} />
+      </ComponentDisplay>
+
+      <ComponentDisplay selected={selected} name={Component.Memoization}>
+        <Memoization />
+      </ComponentDisplay>
+
+      <ComponentDisplay selected={selected} name={Component.Refs}>
+        <Refs />
+      </ComponentDisplay>
+
+      <ComponentDisplay selected={selected} name={Component.Portal}>
+        <Portal />
+      </ComponentDisplay>
+    </>
+  );
 }
 
 export default function Playground({ event }: { event: Event }) {
@@ -49,7 +63,7 @@ export default function Playground({ event }: { event: Event }) {
   const { setTheme } = useContext(ThemeSetterContext);
 
   return (
-    <Container>
+    <S.Container>
       <form>
         <select
           value={selectedComponent}
@@ -69,7 +83,9 @@ export default function Playground({ event }: { event: Event }) {
 
           <option value={Component.Refs}>Refs example with a div</option>
 
-          <option value={Component.Portal}>Portal example with a custom toast</option>
+          <option value={Component.Portal}>
+            Portal example with a custom toast
+          </option>
         </select>
       </form>
       <form>
@@ -84,27 +100,7 @@ export default function Playground({ event }: { event: Event }) {
         </select>
       </form>
 
-      <ComponentDisplay
-        selected={selectedComponent}
-        name={Component.MemoWithSWR}
-      >
-        <UseMemoWithSWR event={event} />
-      </ComponentDisplay>
-
-      <ComponentDisplay
-        selected={selectedComponent}
-        name={Component.Memoization}
-      >
-        <Memoization />
-      </ComponentDisplay>
-
-      <ComponentDisplay selected={selectedComponent} name={Component.Refs}>
-        <Refs />
-      </ComponentDisplay>
-
-      <ComponentDisplay selected={selectedComponent} name={Component.Portal}>
-        <Portal />
-      </ComponentDisplay>
-    </Container>
+      <Components selected={selectedComponent} event={event} />
+    </S.Container>
   );
 }
