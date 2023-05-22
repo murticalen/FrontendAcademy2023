@@ -34,18 +34,6 @@ export default function PlayerLayout({ player }: { player: Player }) {
   //   return () => clearInterval(intervalV)
   // }, [])
 
-  // const onClickNoCallback = () => {
-  //   console.log("Button Clicked");
-  //   setTheme(darkTheme)
-  // }
-  // const onClick = useCallback(onClickNoCallback, [setTheme]);
-
-  // const mockValue = useMemo(() => {
-  //   console.log(nextPlayer)
-
-  //   return 1
-  // }, [nextPlayer])
-
   // const mockObject = {}
   // console.log('aAAA')
 
@@ -70,7 +58,7 @@ export default function PlayerLayout({ player }: { player: Player }) {
 
   return (
     <>
-      <MemoizedButton onClick={noop}>PRESS HERE</MemoizedButton>
+      <MemoizedButton onClick={noop}>PRESS HERE DOES NOTHING</MemoizedButton>
 
       <PlayerLink player={nextPlayer.player}>
         Next player {nextPlayer.player.name} with id: {nextPlayer.player.id}

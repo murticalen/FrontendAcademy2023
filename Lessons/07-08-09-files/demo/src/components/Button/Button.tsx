@@ -2,14 +2,20 @@ import { PropsWithChildren, memo, useContext } from "react";
 import { StyledButton } from "./styles";
 import { ThemeContext, useTheme } from "styled-components";
 
-export default function Button(props: PropsWithChildren<{onClick: () => void}>) {
+type ButtonProps = PropsWithChildren<{
+  onClick: () => void;
+  name?: string
+}>;
 
-    const theme = useContext(ThemeContext)
-    // const theme = useTheme()
-    console.log('Button rendered')
-    console.log(theme.colors.primary.default)
+export default function Button(props: ButtonProps) {
+  const theme = useContext(ThemeContext);
+  // const theme = useTheme()
 
-    return <StyledButton onClick={props.onClick}>{props.children}</StyledButton>
+  if (props.name) {
+    console.log('Button '+props.name + ' re-rendered')
+  }
+
+  return <StyledButton onClick={props.onClick}>{props.children || props.name}</StyledButton>;
 }
 
-export const MemoizedButton = memo(Button)
+export const MemoizedButton = memo(Button);
