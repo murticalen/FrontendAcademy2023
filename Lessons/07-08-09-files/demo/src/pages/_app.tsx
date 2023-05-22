@@ -11,9 +11,10 @@ export default function App({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = useState(themes.light);
 
   return (
-    <ThemeSetterContext.Provider value={{setTheme}}>
+    <ThemeSetterContext.Provider value={{ setTheme }}>
       <ThemeContext.Provider value={theme}>
         <SWRConfig value={{ fetcher }}>
+          <div id="portal-root" />
           <Component {...pageProps} />
         </SWRConfig>
       </ThemeContext.Provider>

@@ -6,12 +6,14 @@ import { ThemeSetterContext } from "@/utils/context";
 import { ThemeName, themes } from "@/utils/theme";
 import Memoization from "./components/Memoization";
 import Refs from "./components/Refs";
+import Portal from "./components/Portal";
 
 enum Component {
   None = "none",
   MemoWithSWR = "memoSWR",
   Memoization = "memoization",
   Refs = "refs",
+  Portal = "portal",
 }
 
 const Container = styled.div`
@@ -56,15 +58,18 @@ export default function Playground({ event }: { event: Event }) {
           }}
         >
           <option value={Component.None}>None</option>
+
           <option value={Component.MemoWithSWR}>
             Use Memo Combined with SWR
           </option>
+
           <option value={Component.Memoization}>
             Memoization with useCallback and React.Memo
           </option>
-          <option value={Component.Refs}>
-            Refs example with a div
-          </option>
+
+          <option value={Component.Refs}>Refs example with a div</option>
+
+          <option value={Component.Portal}>Portal example with a custom toast</option>
         </select>
       </form>
       <form>
@@ -93,11 +98,12 @@ export default function Playground({ event }: { event: Event }) {
         <Memoization />
       </ComponentDisplay>
 
-      <ComponentDisplay
-        selected={selectedComponent}
-        name={Component.Refs}
-      >
+      <ComponentDisplay selected={selectedComponent} name={Component.Refs}>
         <Refs />
+      </ComponentDisplay>
+
+      <ComponentDisplay selected={selectedComponent} name={Component.Portal}>
+        <Portal />
       </ComponentDisplay>
     </Container>
   );
