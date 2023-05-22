@@ -1,5 +1,5 @@
 import Button, { MemoizedButton } from "@/components/Button/Button";
-import { darkTheme } from "@/components/theme/theme";
+import { darkTheme } from "@/utils/theme";
 import { Player } from "@/model/Player";
 import PlayerLink from "@/modules/Link/PlayerLink";
 import { ThemeSetterContext } from "@/utils/context";

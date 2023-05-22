@@ -1,4 +1,4 @@
-import { darkTheme, lightTheme } from "@/components/theme/theme";
+import { darkTheme, lightTheme, themes } from "@/utils/theme";
 import "@/styles/globals.css";
 import { ThemeSetterContext } from "@/utils/context";
 import { fetcher } from "@/utils/fetcher";
@@ -8,7 +8,7 @@ import { ThemeContext } from "styled-components";
 import { SWRConfig } from "swr";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [theme, setTheme] = useState(lightTheme);
+  const [theme, setTheme] = useState(themes.light);
 
   return (
     <ThemeSetterContext.Provider value={{setTheme}}>
