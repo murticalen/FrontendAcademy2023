@@ -4,16 +4,26 @@ import PlayerLink from "@/modules/Link/PlayerLink";
 import { useRouter } from "next/router";
 import useSWR from "swr";
 
-export default function PlayerLayout({ player }: { player: Player }) {
+function PlayerDetails({ player }: { player: Player }) {
+  return (
+    <>
+      <div>Id: {player.id}</div>
+      <div>Name: {player.name}</div>
+      <div>Team: {player.team.name}</div>
+    </>
+  );
+}
+
+function NextPlayer({ currentPlayerId }: { currentPlayerId: number }) {
   const { data: nextPlayer, isLoading } = useSWR<{ player: Player }>(
-    "https://api.sofascore.com/api/v1/player/" + (player.id + 1),
+    "https://api.sofascore.com/api/v1/player/" + (currentPlayerId + 1),
     { refreshInterval: 1000 }
   );
   const router = useRouter();
 
   if (!nextPlayer) {
     if (isLoading) {
-      return <div>LOADING</div>;
+      return <div>Next player is loading</div>;
     }
     return <div>THERE IS NO NEXT PLAYER</div>;
   }
@@ -31,6 +41,15 @@ export default function PlayerLayout({ player }: { player: Player }) {
       <PlayerLink player={nextPlayer.player}>
         Next player {nextPlayer.player.name} with id: {nextPlayer.player.id}
       </PlayerLink>
+    </>
+  );
+}
+
+export default function PlayerLayout({ player }: { player: Player }) {
+  return (
+    <>
+      <PlayerDetails player={player} />
+      <NextPlayer currentPlayerId={player.id} />
     </>
   );
 }
