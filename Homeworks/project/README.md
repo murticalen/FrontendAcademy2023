@@ -85,9 +85,9 @@ User stories are sentences from the user's perspective. They can be pictured as 
 
 User stories are bellow: Stories in the **bold** are required, stories in the _italic_ are a further improvement, developers will decide if any of them should be implemented. You can also add extra stories which you think are fitting.
 
-### Stories:
+### Stories (297 points):
 
-#### General UI - 20 points
+#### General UI - 40 points
 
 1. **User should be able to use the app on the mobile device**
 2. **User should be able to use the app on the computer screen**
@@ -96,7 +96,7 @@ User stories are bellow: Stories in the **bold** are required, stories in the _i
 5. _UI is visually stable and there is no flickering. User can first see content loaders or UI is smartly drawn by development._ - 10 points
 6. _User can change the sport of the page (e.g. tennis, ice-hockey or basketball) and all features work for all sports_ - 15 points
 
-#### Sport page
+#### Sport page - 30 points
 
 1. **User can see all tournaments for the selected sport** - 5 points
 2. **User can see all events (Event Cells) for the selected date** - 5 points
@@ -107,61 +107,61 @@ User stories are bellow: Stories in the **bold** are required, stories in the _i
 5. _User can click on tournament to open the tournament page_
 6. _User can change the date for the sport events_ - 10 points
 
-#### Event Cell
+#### Event Cell - 14 points
 
 1. **User can see start time of the event, teams and scores** - 5 points
 2. _Event status is displayed and status colors are correctly handled_ - 3 points
 3. _Team colors are correctly handled given the match outcome_ - 3 points
 4. _User can add/remove event(s) to Tracked events_ - 3 points
 
-#### Event Page / event widget
+#### Event Page / event widget - 20 points
 
 1. **User can see teams playing in the event, score (if exists), start date and time** - 5 points
 2. **Event widget links to the event page** - 2 points
 3. _Event incidents are displayed_ - 10 points
 4. _User can add/remove the event to Tracked events_ - 3 points
 
-#### _Standings_
+#### _Standings_ - 20 points
 
 1. _For selected tournament/team/event in a given sport, standings are displayed corrently_ - 20 points
 
-### _Matches_
+#### _Matches_ - 30 points
 
 1. _For selected tournament/team/player, a user can see their matches. The pagination and general feel are similar/identical for all entities._ - 30 points
 
-#### _Team page_
+#### _Team page_ - 43 points
 
 1. _Team details contains all the information from Zeplin_ - 20 points
 2. _Matches tab is displayed for the team, user can select the match shown in widget_ - 5 points
 3. _Standings tab is displayed for the team, user can select for which competition the standings is shown_ - 8 points
 4. _Players tab is displayed for the team_ - 10 points
 
-#### _Player page_
+#### _Player page_ - 15 points
 
 1. _There is a player page which displays player information shown on Zeplin_ - 10 points
 2. _Matches tab is displayed for the player, user can select the match shown in widget_ - 5 points
 
-#### _Tournament page_
+#### _Tournament page_ - 15 points
 
 1. _There is a tournament page_ - 5 points
 2. _Matches tab is displayed for the tournament, user can select the match shown in widget_ - 5 points
 3. _Standings tab is shown for the tournament_ - 5 points
 
-#### _Tracked Events Page - no design, 30 points alltogether_
+#### _Tracked Events Page - no design, 30 points altogether_
 
 - _The page looks like Sport page (tournaments, event list and widget), but shows user's tracked events_
 - _User can see all tracked events_
 - _User can remove event(s) from Tracked events_
 - _Events are grouped into "previous" (older than today), "current" (today and tomorrow) and "next" (after tomorrow) groups. Those groups are navigated like they are on [Sofascore's favorites page](https://www.sofascore.com/favorites)._
 
-#### _Settings page_
+#### _Settings page_ - 30 points
 
 1. _There is a settings page with about section_ - 5 points
 2. _User can change app's theme on settings page_ (points under General UI task)
 3. _User can change langauage of the app_ - 20 points
 4. _User can change date format in the app, or date format is changed via language change_ - 5 points
 
-#### _Search - no design_
+#### _Search - no design_  - 10 points
 1. _User can search teams in the app_ - 5 points
 1. _User can search players in the app_ - 5 points
 
